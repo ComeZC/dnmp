@@ -1,0 +1,9 @@
+blog.comezc.com:90 {
+    gzip
+    log access.log
+    tls comezc@outlook.com
+    #proxy / http://blog.comezc.com {
+    #   transparent
+    #}
+}
+
