@@ -49,16 +49,16 @@ services:
     ports:
       - "6379:6379"
 
-#  phpmyadmin:
-#    image: phpmyadmin/phpmyadmin:latest
-#    ports:
-#      - "8080:80"
-#    networks:
-#      - net-mysql
-#    environment:
-#      - PMA_HOST=mysql
-#      - PMA_PORT=3306
-#
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    ports:
+      - "8090:80"
+    networks:
+      - net-mysql
+    environment:
+      - PMA_HOST=mysql
+      - PMA_PORT=3306
+
 #  phpredisadmin:
 #    image: erikdubbelboer/phpredisadmin:latest
 #    ports:
